@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/d6d0dcb0-ccd4-4dbc-8eb0-b10e998290c5
 
 ### 2️⃣ リポジトリをクローン
 ```sh
-git clone https://github.com/your-github-username/react-sound-player.git
+git clone https://github.com/PINTO0309/react-sound-player.git
 cd react-sound-player
 ```
 
