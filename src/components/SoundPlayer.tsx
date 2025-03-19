@@ -9,7 +9,7 @@ const SoundPlayer: React.FC = () => {
   const [play, setPlay] = useState<(() => void) | null>(null);
   const [pause, setPause] = useState<(() => void) | null>(null);
   const [stop, setStop] = useState<(() => void) | null>(null);
-  const [audioFormat, setAudioFormat] = useState<string>("mp3"); // 初期フォーマットは mp3
+  const [audioFormat, setAudioFormat] = useState<string>("mp3");
 
   // useSound を初期化
   const [initializeSound, soundData] = useSound(audioSrc, {
