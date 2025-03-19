@@ -8,6 +8,8 @@ React Sound Player は、ユーザーが **MP3** または **WAV** ファイル�
 
 🔗 **デモURL:** https://pinto0309.github.io/react-sound-player/
 
+https://github.com/user-attachments/assets/d6d0dcb0-ccd4-4dbc-8eb0-b10e998290c5
+
 ---
 
 ## 🛠️ 機能一覧
