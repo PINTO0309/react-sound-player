@@ -1,6 +1,6 @@
 # 🎵 React Sound Player
 
-React Sound Player は、ユーザーが **MP3** または **WAV** ファイルをアップロードし、再生・一時停止・停止ができる **シンプルなオーディオプレイヤー** です。このプロジェクトは **React** と **Howler.js** を使用して構築されています。
+React Sound Player は、ユーザーが **MP3** または **WAV** ファイルをアップロードし、再生・一時停止・停止ができる **シンプルなオーディオプレイヤー** です。このプロジェクトは **React** を使用して構築されています。
 
 ---
 
@@ -14,7 +14,6 @@ React Sound Player は、ユーザーが **MP3** または **WAV** ファイル�
 ✅ 音声ファイル（MP3 / WAV）をアップロード
 ✅ 選択した音声を再生・一時停止・停止
 ✅ 現在の音声ファイル名を表示
-✅ UI は **Tailwind CSS** でスタイリング
 ✅ **GitHub Pages** で簡単デプロイ
 
 ---
@@ -85,8 +84,6 @@ npm run deploy
 
 ## 🛠️ 使用技術
 - ⚛ **React** - UI の構築
-- 🎵 **Howler.js** - 音声の再生管理
-- 🎨 **Tailwind CSS** - スタイリング
 - 🚀 **Vite** - 開発環境のセットアップ
 - 📦 **gh-pages** - GitHub Pages へのデプロイ
 
