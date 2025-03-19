@@ -1,54 +1,94 @@
-# React + TypeScript + Vite
+# 🎵 React Sound Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Sound Player は、ユーザーが **MP3** または **WAV** ファイルをアップロードし、再生・一時停止・停止ができる **シンプルなオーディオプレイヤー** です。このプロジェクトは **React** と **Howler.js** を使用して構築されています。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 デモ
+GitHub Pages にデプロイ後、以下のリンクからデモを試せます。
 
-## Expanding the ESLint configuration
+🔗 **デモURL:** [https://your-github-username.github.io/react-sound-player](https://your-github-username.github.io/react-sound-player)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ 機能一覧
+✅ 音声ファイル（MP3 / WAV）をアップロード
+✅ 選択した音声を再生・一時停止・停止
+✅ 現在の音声ファイル名を表示
+✅ UI は **Tailwind CSS** でスタイリング
+✅ **GitHub Pages** で簡単デプロイ
+
+---
+
+## 📦 インストール方法
+
+### 1️⃣ 必要な環境
+- Node.js (v16 以上推奨)
+- npm または yarn
+
+### 2️⃣ リポジトリをクローン
+```sh
+git clone https://github.com/your-github-username/react-sound-player.git
+cd react-sound-player
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 3️⃣ 必要なパッケージをインストール
+```sh
+npm install
+# または
+yarn install
 ```
+
+### 4️⃣ ローカルでアプリを実行
+```sh
+npm run dev
+# または
+yarn dev
+```
+📌 **http://localhost:5173** にアクセスし、動作を確認してください。
+
+---
+
+## 🎛️ 使い方
+
+1️⃣ **[ファイル選択]** ボタンをクリックし、MP3 または WAV ファイルを選択
+2️⃣ **[Play]** をクリックすると音声が再生される
+3️⃣ **[Pause]** で一時停止、**[Stop]** で完全停止
+4️⃣ 別のファイルを選択すると、新しい音声がロードされる
+
+---
+
+## 🌍 GitHub Pages にデプロイする
+
+### 1️⃣ `gh-pages` パッケージをインストール
+```sh
+npm install gh-pages --save-dev
+```
+
+### 2️⃣ `package.json` にデプロイ設定を追加
+`package.json` の `"scripts"` に以下を追加：
+```json
+"homepage": "https://your-github-username.github.io/react-sound-player",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+### 3️⃣ デプロイ実行
+```sh
+npm run deploy
+```
+✨ **GitHub Pages にデプロイ完了！**
+🔗 **URL:** [https://your-github-username.github.io/react-sound-player](https://your-github-username.github.io/react-sound-player)
+
+---
+
+## 🛠️ 使用技術
+- ⚛ **React** - UI の構築
+- 🎵 **Howler.js** - 音声の再生管理
+- 🎨 **Tailwind CSS** - スタイリング
+- 🚀 **Vite** - 開発環境のセットアップ
+- 📦 **gh-pages** - GitHub Pages へのデプロイ
+
+---
