@@ -5,9 +5,8 @@ React Sound Player は、ユーザーが **MP3** または **WAV** ファイル�
 ---
 
 ## 🚀 デモ
-GitHub Pages にデプロイ後、以下のリンクからデモを試せます。
 
-🔗 **デモURL:** [https://your-github-username.github.io/react-sound-player](https://your-github-username.github.io/react-sound-player)
+🔗 **デモURL:** https://pinto0309.github.io/react-sound-player/
 
 ---
 
