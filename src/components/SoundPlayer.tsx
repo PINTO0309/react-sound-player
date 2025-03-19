@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useSound from "use-sound";
 
-const DEFAULT_AUDIO = "/push_button.mp3"; // デフォルトの音声ファイル
+const DEFAULT_AUDIO = process.env.PUBLIC_URL + "/push_button.mp3"; // デフォルトの音声ファイル
 
 const SoundPlayer: React.FC = () => {
   const [audioSrc, setAudioSrc] = useState<string>(DEFAULT_AUDIO);
